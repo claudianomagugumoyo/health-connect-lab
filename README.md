@@ -57,19 +57,7 @@ Completed activities included:
 ## 📁 Repository Structure
 
 ```text
-HealthConnect-Experience-Lab/
-│
-├── data/
-│   └── HealthConnect_Appointment_Data.csv
-│
-├── notebook/
-│   └── HealthConnect_Analysis.ipynb
-│
-├── report/
-│   ├── Initial_Analysis_Report.pdf
-│   └── Week4_Project_Summary.pdf
-│
-└── README.md
+HealthConnect-Experience-Lab/ │ ├── data/ │ └── HealthConnect_Appointment_Data.csv │ ├── notebook/ │ ├── Week4_HealthConnect_Analysis.ipynb │ └── Week5_HealthConnect_Analysis.ipynb │ ├── report/ │ ├── Week4_Project_Summary.pdf │ ├── Week5_Analytics_Report.pdf │ └── Week5_Project_Summary.pdf │ ├── dashboard/ │ └── HealthConnect_PowerBI_Dashboard.pdf (or screenshots) │ └── README.md
 ```
 
 ---
