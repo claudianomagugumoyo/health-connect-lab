@@ -30,6 +30,20 @@ The main objectives were to:
 
 ---
 
+## Week 5 Objective
+
+Week 5 focused on practical implementation.
+
+Completed activities included:
+
+* Extended exploratory data analysis.
+* KPI development and calculation.
+* Business insight generation.
+* Interactive Power BI dashboard development.
+* Business recommendations based on analytical findings.
+
+---
+
 ## 🛠️ Tools Used
 
 * Python
@@ -74,13 +88,23 @@ During this week's analysis, I:
 
 ---
 
+## Week 5 Highlights
+
+Some of the main findings include:
+
+* Patients with previous no-shows were considerably more likely to miss future appointments.
+* Longer booking lead times were associated with higher no-show rates.
+* Appointment reminders were associated with slightly improved attendance.
+* No-show rates remained consistently high across appointment types.
+* Age, waiting time and distance to the clinic appeared to have relatively little influence on appointment attendance.
+---
+
 ## Key Business Questions
 
 Some of the questions that will guide the remainder of the project include:
 
 * Which factors are associated with appointment no-shows?
 * Do appointment reminders improve attendance?
-* Does waiting time influence appointment attendance?
 * Does distance to the clinic affect patient attendance?
 * Are patients with previous no-shows more likely to miss future appointments?
 
@@ -88,13 +112,7 @@ Some of the questions that will guide the remainder of the project include:
 
 ## Next Steps
 
-In Week 5, I will:
-
-* Perform deeper exploratory data analysis.
-* Investigate relationships between appointment outcomes and key variables.
-* Calculate and evaluate the proposed KPIs.
-* Start building dashboards to communicate insights.
-* Generate recommendations that support improved appointment attendance.
+The next phase of the project will focus on expanding the analysis and supporting predictive modelling to help identify patients who are at greater risk of missing future appointments.
 
 ---
 
