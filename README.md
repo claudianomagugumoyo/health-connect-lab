@@ -44,6 +44,18 @@ Completed activities included:
 
 ---
 
+## Week 6 Objective
+
+Building on the Week 5 exploratory analysis and dashboard development, Week 6 focused on advancing the HealthConnect analytics solution from descriptive reporting towards decision support. Activities included:
+
+* Validates the most important appointment attendance patterns
+* Investigated relationships between key factors influencing no-show behaviour
+* Improved the dashboard with insights that could support operational decision-making.
+
+The analysis focused on identifying higher-risk appointment groups, evaluating reminder effectiveness and translating analytical findings into actionable recommendations for reducing missed appointments.
+
+---
+
 ## 🛠️ Tools Used
 
 * Python
@@ -85,6 +97,27 @@ Some of the main findings include:
 * Appointment reminders were associated with slightly improved attendance.
 * No-show rates remained consistently high across appointment types.
 * Age, waiting time and distance to the clinic appeared to have relatively little influence on appointment attendance.
+  
+---
+
+## Week 6 Highlights
+
+* Validated Week 5 findings by investigating the relationship between previous no-show behaviour and future appointment attendance.
+* Developed patient risk categories based on previous no-show history to identify groups requiring different levels of administrative support.
+* Enhanced the Week 5 dashboard by adding decision-support visuals:
+  - Patient Risk Classification Matrix
+  - Previous No-Shows × Reminder Sent analysis
+  - Booking Lead Days by Appointment Type
+  - Attendance Rate by Appointment Type
+  - Average Booking Lead Days × Reminder Sent analysis
+* Developed analytical outputs that can support future testing, predictive modelling and administrative decision-making.
+
+### Key Insights:
+- Previous no-show history remained the strongest indicator associated with future missed appointments.
+- Higher-risk patient groups demonstrated lower attendance rates and may benefit from targeted engagement strategies.
+- Reminder systems showed a positive association with attendance, although additional interventions may be needed for higher-risk patients.
+- Booking lead time provided additional context but should be considered alongside other attendance indicators.
+
 ---
 
 ## Key Business Questions
