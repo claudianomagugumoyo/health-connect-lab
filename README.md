@@ -56,6 +56,17 @@ The analysis focused on identifying higher-risk appointment groups, evaluating r
 
 ---
 
+## Week 7 Objective
+Week 7 focused on analytical testing, refinement and validation. The main objectives were:
+
+* Validate the analytical findings identified during Week 6 to determine whether they remained consistent when tested against additional evidence.
+* Test and refine the HealthConnect dashboard to improve usability and decision support.
+* Validate key KPIs and attendance patterns using the underlying appointment dataset.
+* Collaborate with the Data Science track to assess how analytical findings could support predictive modelling decisions.
+* Identify remaining limitations and prepare the project for final integration.
+
+---
+
 ## 🛠️ Tools Used
 
 * Python
@@ -69,7 +80,38 @@ The analysis focused on identifying higher-risk appointment groups, evaluating r
 ## 📁 Repository Structure
 
 ```text
-HealthConnect-Experience-Lab/ │ ├── data/ │ └── HealthConnect_Appointment_Data.csv │ ├── notebook/ │ ├── Week4_HealthConnect_Analysis.ipynb │ └── Week5_HealthConnect_Analysis.ipynb │ ├── report/ │ ├── Week4_Project_Summary.pdf │ ├── Week5_Analytics_Report.pdf │ └── Week5_Project_Summary.pdf │ ├── dashboard/ │ └── HealthConnect_PowerBI_Dashboard.pdf (or screenshots) │ └── README.md
+## 📁 Repository Structure
+
+│
+├── dashboard/
+│   └── HealthConnect Appointment Attendance & Risk Analysis Dashboard
+│       └── Dashboard screenshots / Power BI file
+│
+├── data/
+│   └── HealthConnect_Appointment_Data.csv
+│
+├── notebook/
+│   ├── Week4_HealthConnect_Analysis.ipynb
+│   ├── Week5_HealthConnect_Analysis.ipynb
+│   └── Week6_HealthConnect_Analysis.ipynb
+│
+├── Week4/
+│   └── Week4 project documentation and outputs
+│
+├── Week5/
+│   └── Week5 project documentation and outputs
+│
+├── Week6/
+│   └── Week6 analytics report, dashboard updates and supporting files
+│
+├── Week7/
+│   └── Week7 analytics testing, refinement and validation outputs
+│
+├── .gitignore
+│
+├── LICENSE
+│
+└── README.md
 ```
 
 ---
@@ -112,31 +154,73 @@ Some of the main findings include:
   - Average Booking Lead Days × Reminder Sent analysis
 * Developed analytical outputs that can support future testing, predictive modelling and administrative decision-making.
 
-### Key Insights:
-- Previous no-show history remained the strongest indicator associated with future missed appointments.
-- Higher-risk patient groups demonstrated lower attendance rates and may benefit from targeted engagement strategies.
-- Reminder systems showed a positive association with attendance, although additional interventions may be needed for higher-risk patients.
-- Booking lead time provided additional context but should be considered alongside other attendance indicators.
+--- 
+
+## Week 7 Highlights
+
+* Validated the key Week 6 findings related to appointment attendance behaviour, including:
+  - Previous no-show history as a strong indicator of future missed appointments.
+  - Increased no-show rates among appointments booked further in advance.
+  - The limited predictive value of reminder status for modelling purposes, while remaining relevant as an operational intervention.
+* Performed cross-track validation with the Data Science track by sharing analytical findings that informed feature selection and model refinement.
+* Supported model validation by providing evidence on:
+  - Previous no-show behaviour.
+  - Booking lead-time patterns.
+  - Attendance trends across appointment segments.
+* Refined the Power BI dashboard by adding interactive slicers to improve exploration of:Appointment type, Appointment outcome, Booking lead group and Patient risk classification.
+* Tested dashboard functionality and confirmed that KPI calculations and visualisations remained consistent after refinement.
+
+---
+
+### 🔎 Key Insights:
+
+Through progressive analysis, dashboard refinement and validation activities, several important patterns were identified:
+
+### 1. Previous attendance behaviour is the strongest indicator of future no-shows
+
+Patients with previous missed appointments showed substantially higher no-show rates in future appointments. No-show rates increased from approximately 43.5% among patients without previous no-shows to nearly 68% among patients with multiple previous no-shows.
+
+**Implication:** Previous attendance behaviour can be used to identify higher-risk patients who may benefit from targeted follow-up strategies.
+
+### 2. Longer booking lead times are associated with increased no-show risk
+
+Appointments scheduled further in advance showed higher missed appointment rates. No-show rates increased from approximately 29% for appointments booked 0–7 days in advance to over 71% for appointments booked 46–60 days in advance.
+
+**Implication:** Earlier confirmation strategies may help reduce missed appointments for appointments scheduled further in advance.
+
+### 3. Reminder usage supports attendance improvement but requires further evaluation
+
+Patients who received reminders showed slightly improved attendance compared with those who did not. However, reminder status was not retained as a predictive modelling feature due to potential prediction-time limitations.
+
+**Implication:** Reminders remain valuable as an operational intervention rather than a direct predictor of no-show behaviour.
+
+### 4. No-show behaviour represents a clinic-wide challenge
+
+No-show rates remained consistently high across appointment types, suggesting the issue is not isolated to a specific service area.
+
+**Implication:** HealthConnect should focus on broader patient engagement strategies rather than targeting only one appointment category.
+
+### 5. Risk-based segmentation can support targeted interventions
+
+Combining behavioural indicators such as previous no-shows and booking patterns allows patients to be grouped into different risk categories.
+
+**Implication:** HealthConnect can allocate administrative resources more effectively by applying different follow-up approaches based on patient risk level.
+
 
 ---
 
 ## Key Business Questions
 
-Some of the questions that will guide the remainder of the project include:
+The analysis was guided by the following questions:
 
-* Which factors are associated with appointment no-shows?
-* Do appointment reminders improve attendance?
-* Does distance to the clinic affect patient attendance?
+* Which patient and appointment factors are associated with missed appointments?
 * Are patients with previous no-shows more likely to miss future appointments?
+* Does booking lead time influence appointment attendance?
+* Do appointment reminders contribute to improved attendance?
+* Can patient and appointment characteristics be used to identify higher-risk groups?
+* How can analytical findings support strategies to improve attendance and reduce missed appointments?
 
 ---
-
-## Next Steps
-
-The next phase of the project will focus on expanding the analysis and supporting predictive modelling to help identify patients who are at greater risk of missing future appointments.
-
----
-
 
 ## 👤 Author
 
